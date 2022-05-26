@@ -1,6 +1,6 @@
 # Calibration of Few-Shot Classification Tasks
 This repo contains the implementation of the paper,    
-**Calibration of Few-Shot Classification Tasks: Mitigating Misconfidence from Distribution Mismatch**    
+[**Calibration of Few-Shot Classification Tasks: Mitigating Misconfidence from Distribution Mismatch**](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9777704)    
 that has been published in _IEEE Access_, vol. 10, 2022, doi:10.1109/ACCESS.2022.3176090.
 
 <center><img src="/img/overview.png" width="70%" height="70%"></center>
