@@ -1,15 +1,23 @@
-# Calibration of Few-Shot Classification Tasks
-This repo contains the implementation of the paper,    
-[**Calibration of Few-Shot Classification Tasks: Mitigating Misconfidence from Distribution Mismatch**](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9777704)    
-that has been published in _IEEE Access_, vol. 10, 2022, doi:10.1109/ACCESS.2022.3176090.
+# [Official]  Calibration of Few-Shot Classification Tasks
 
-<center><img src="/img/overview.png" width="70%" height="70%"></center>
+This repository contains the official PyTorch implementation of the following paper:
+> **Calibration of Few-Shot Classification Tasks: Mitigating Misconfidence from Distribution Mismatch** by
+> Sungnyun Kim and Se-Young Yun, IEEE _Access_ vol. 10, 2022, doi:10.1109/ACCESS.2022.31760902022.
+> 
+> **Paper**: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9777704
+>
+> **Abstract:** *As many meta-learning algorithms improve performance in solving few-shot classification problems for practical applications, the accurate prediction of uncertainty is considered essential. In meta-training, the algorithm treats all generated tasks equally and updates the model to perform well on training tasks. During the training, some of the tasks may make it difficult for the model to infer the query examples from the support examples, especially when a large mismatch between the support set and the query set exists. The distribution mismatch causes the model to have incorrect confidence, which causes a calibration problem. In this study, we propose a novel meta-training method that measures the distribution mismatch and enables the model to predict with more precise confidence. Moreover, our method is algorithm-agnostic and can be readily expanded to include a range of meta-learning models. Through extensive experimentation, including dataset shift, we show that our training strategy prevents the model from becoming indiscriminately confident, and thereby helps the model to produce calibrated classification results without the loss of accuracy.*
+
+<p align="center">
+  <img src="/img/overview.png" width="500">    
+</p>
 
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
 * [Data Setup](#data-setup)
 * [Usage](#usage)
+* [Citing This Work](#citing-this-work)
 * [License](#license)
 
 ## Prerequisites
@@ -79,6 +87,19 @@ To evaluate and check the calibration results after training is done, run `test.
 For exmaple, after training miniImageNet 5-way 1-shot TCProtoNet, run
 ```sh
 python test.py --dataset miniImagenet --n-shot 1 --method tcproto
+```
+
+## Citing This Work
+
+If you find this repo useful for your research, please consider citing our paper:
+```
+@article{kim2022calibration,
+  title={Calibration of Few-Shot Classification Tasks: Mitigating Misconfidence from Distribution Mismatch},
+  author={Kim, Sungnyun and Yun, Se-Young},
+  journal={IEEE Access},
+  year={2022},
+  publisher={IEEE}
+}
 ```
 
 ## License
